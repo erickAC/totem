@@ -6,7 +6,7 @@ export class EscolhaService {
     constructor(private httpClient: HttpClient) { }
     
     salvar(tipo: string, id: number) {
-        return this.httpClient.post<any>(`http://localhost:8080/salvar/${tipo}/${id}`, {});
+        return this.httpClient.post<any>(`https://api-totem.onrender.com/avaliacao/salvar/${tipo}/${id}`, {});
     }
 
 }
