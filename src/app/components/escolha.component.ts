@@ -58,8 +58,8 @@ import { RouterModule } from '@angular/router';
             <div class="escolhas mt-5">
                 @for (item of escolhas; track $index) {
                     <div class="button text-center" routerLink="/pdf" [queryParams]="{src: item.caminho, id: item.id}">
-                        <h5 style="text-transform: uppercase; font-weight: 800;"><b>{{ item.titulo }} {{ $index }}</b></h5>
-                        <p style="text-transform: uppercase;">Aluno: {{ item.aluno }}</p>
+                    <h5 style="text-transform: uppercase; font-weight: 800; font-size: 10px;"><b>{{ item.titulo }}</b></h5>
+                    <span style="text-transform: uppercase; font-size: 12px;">Aluno: {{ item.aluno }}</span>
                     </div>
                 }
             </div>
